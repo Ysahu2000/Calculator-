@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div class="claculator">
+            <div class="brand">claculator</div>
+            <input type="text" placeholder="0" id="result">
+            <br><br>
+            <div class="keypad">
+                <div>
+                    <button class="number" id="button" onclick="Display('%')">%</button>
+                    <button class="number" id="button" onclick="Display('/')">/</button>
+                    <button class="number" id="button" onclick="Delet()">DEL</button>
+                    <button class="number" onclick="Clear()" id="AC">AC</button>
+                </div>
+                <div>
+                    <button class="number" onclick="Display('7')">7</button>
+                    <button class="number" onclick="Display('8')">8</button>
+                    <button class="number" onclick="Display('9')">9</button>
+                    <button class="number" id="button" onclick="Display('*')">X</button>
+                </div>
+                <div>
+                    <button class="number" onclick="Display('4')">4</button>
+                    <button class="number" onclick="Display('5')">5</button>
+                    <button class="number" onclick="Display('6')">6</button>
+                    <button class="number" id="button" onclick="Display('-')">-</button>
+                </div>
+                <div>
+                    <button class="number" onclick="Display('1')">1</button>
+                    <button class="number" onclick="Display('2')">2</button>
+                    <button class="number" onclick="Display('3')">3</button>
+                    <button class="number" id="button" onclick="Display('+')">+</button>
+                </div>
+                <div>
+                    <button class="number" onclick="Display('.')">.</button>
+                    <button class="number" onclick="Display('0')">0</button>
+                    <button class="number" onclick="Display('00')">00</button>
+                    <button onclick="Calculate()" id="button" class="number">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
